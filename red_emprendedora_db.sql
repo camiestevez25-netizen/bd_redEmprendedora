@@ -12,3 +12,13 @@ CREATE DATABASE red_emprendedora_db
     TABLESPACE = pg_default
     CONNECTION LIMIT = -1
     IS_TEMPLATE = False;
+
+
+CREATE TABLE stand(
+    ID_STAND  integer NOT NULL ,
+    ID_EVENTO integer NOT NULL ,
+    ID_USUARIO  integer NOT NULL,
+    COSTO_STAND  DECIMAL(10,2) ,
+    ESTADO_STAND  integer NOT NULL, 
+    NUMERO_STAND  integer NOT NULL
+)
